@@ -2,6 +2,9 @@ package com.owly.reservation.negocio.service;
 
 import com.owly.reservation.modelo.Cliente;
 import com.owly.reservation.negocio.repository.ClienteRepository;
+
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -41,5 +44,9 @@ public class ClienteService {
     //Consultar un cliente por su identificacion
     public Cliente findByIdentificacion(String identificacionCli){
         return this.clienteRepository.findByIdentificacion(identificacionCli);
+    }
+    
+    public List<Cliente> findAll(){
+    	return this.clienteRepository.findAll();
     }
 }

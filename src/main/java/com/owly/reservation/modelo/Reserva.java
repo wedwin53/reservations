@@ -10,6 +10,10 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Date;
 
+
+// La anotacion @Temporal(TemporalType.DATE) se usa para manejar formatos de fecha, si son solo fecha, fecha y hora o solo hora.
+
+
 @Data
 @Entity
 @Table(name = "reserva")

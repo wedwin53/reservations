@@ -11,6 +11,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 //la anotacion Data ayuda a crear los getter y setters en el momento de la construccion del proyecto
+//En el named query, campo name, se usa el nombre de la entidad + el nombre del metodo que se usara el la interfaz del respository (name="Cliente.findByIdentificacion")
 
 @Data
 @Entity
